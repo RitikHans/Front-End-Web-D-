@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        .card {
+            border: 2px solid red;
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: bisque;
+            box-shadow: 12px 12px yellow;
+            box-shadow: 12px 12px 10px yellow; /* 3rd is blur radius */
+            box-shadow: 12px 12px 10px 10px rgba(343, 1054, 112, 0.8); /* 4th is spread radius */
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius; */
+
+            box-shadow: inset 12px 12px orange;
+            box-shadow: 12px 12px yellow,35px 35px red;
+        }
+
+        h2{
+            text-shadow: 12px 12px yellow;  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="id-1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quasi, numquam minus laborum assumenda
+                dolorem quis enim minima, tempora soluta officia velit optio ad natus est nostrum dolorum harum.
+                Temporibus porro sit consectetur hic.</p>
+        </div>
+
+        <div class="card" id="id-2">
+            <h2>This is html Course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quasi, numquam minus laborum assumenda
+                dolorem quis enim minima, tempora soluta officia velit optio ad natus est nostrum dolorum harum.
+                Temporibus porro sit consectetur hic.</p>
+        </div>
+
+        <div class="card" id="id-3">
+            <h2>This is CSS Course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quasi, numquam minus laborum assumenda
+                dolorem quis enim minima, tempora soluta officia velit optio ad natus est nostrum dolorum harum.
+                Temporibus porro sit consectetur hic.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

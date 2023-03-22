@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+.translated{
+    transform: perspective(15px) translateZ(-50px);
+}
+
+.scaled{
+    transform: perspective(350px) scaleZ(6) rotateX(45deg)  rotateY(45deg);
+    transform: rotateZ(30deg);
+    margin-left:200px;
+}
+    </style>
+</head>
+<body>
+    <div class="static">
+        static
+    </div>
+
+    <div class="translated">
+        Translated
+    </div>
+
+    <div class="scaled">
+        Scaled
+    </div>
+</body>
+</html>

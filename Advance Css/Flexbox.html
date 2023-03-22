@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+           /* flex-flow: row wrap; */
+           justify-content: center;
+           /* justify-content: space-between;
+           justify-content: space-evenly;
+           justify-content: space-around; */
+           align-items: center;
+           /* align-items: flex-start;
+           align-items: flex-end; */
+           align-items: stretch; 
+        }
+        
+        h1{
+            text-align: center;
+        }
+        .item{
+            background-color: tomato;
+            border: 2px solid rgb(0, 185, 80);
+            margin: 10px;
+            padding: 3px ;
+            width: 200px;
+            height: 200px;
+            font-size:25px ;
+            text-align: center;
+        }
+        #item1{
+            /* higher the order,later it shows up in the container */
+            /* order: 3;  */
+            flex-basis: 320px;
+        }
+        #item2{
+
+            /* order: 40;
+            flex-shrink: 4; */
+
+        }
+        #item3{
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>I am learning Flexbox</h1>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <!-- <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">fifth box</div>
+        <div class="item" id="item6">sixth box</div> -->
+    </div>
+</body>
+</html>

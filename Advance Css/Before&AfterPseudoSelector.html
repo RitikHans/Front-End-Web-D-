@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <style>
+        header::before{
+            background: url('/bg1');
+            content: "";
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            top: 0px;
+            left: 0px;
+         
+
+        }
+        body{
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .navigation{
+            display: flex;
+            list-style: none;
+         
+        }
+        nav li{
+            padding: 12px 35px;
+            font-size: 18px;
+        }
+        section{
+            /* border: 2px solid rgb(255, 255, 255); */
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 50vh;
+            /* text-align: center; */
+            align-items: center;
+        }
+
+        section::before{
+            content: "This is a Before content";
+        }
+        section::after{
+            content: "This is a After content";
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to The World of Coding</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem illo voluptates sed enim repellat doloremque exercitationem voluptatibus, labore ipsum excepturi? Doloremque assumenda tempora nesciunt ipsam voluptatem alias earum architecto, consectetur id porro neque. Ut.</p>
+        </section>
+    </header>
+
+    <hr>
+</body>
+</html>

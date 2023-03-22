@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        div p{
+            color: white;
+            background-color: black;
+            font-weight:bold;
+        }
+
+
+        /* div > p means element direct inside div tag */
+        div > p{
+            color: white;
+            background-color: rgb(205, 38, 38);
+            height: 10vh;
+            width: 100vw;
+            font-weight:bold;
+        }
+
+        
+        /* Div + p means that element whose comes after div */
+        div + p{
+            background-color: purple;
+            color: white;
+            border: 2px solid yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatibus voluptas reiciendis?
+        </p>
+        <div class="container2">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore asperiores magni quis.</p>
+        </div>
+        <div class="container3">
+            <ul>
+                <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptates veritatis quia!</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio recusandae vitae est!</p>
+
+</body>
+</html>

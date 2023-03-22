@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Form</title>
+</head>
+<body>
+    <h2>Form Creating </h2>
+    <form action="backend.php">
+       <label for="myname">Name :</label>
+        <input type="text" name="myname" id="myname">
+       <br>
+
+     <div> Name : <input type="text" name="myname" id=""> </div> <br>
+     <div> Roll : <input type="text" name="myrole" id=""> </div> <br>
+     <div> Email : <input type="email" name="myemail" id=""> </div> <br>
+     <br>
+     <div>
+         Date : <input type="date" name="mydate" id="">
+        </div>
+        <br>
+        
+        <div>
+            Bonus : <input type="number" name="mynum" id="">
+        </div> <br>
+        <label for="check">Are you eligible :</label>
+             <input type="checkbox" name="myeligibility" id="check" checked>
+        <br>
+        <br>
+        <div>
+            gender : Male <input type="radio" name="mygender" id="">
+            female <input type="radio" name="mygender" id="">
+            other <input type="radio" name="mygender" id="">
+        </div> <br>
+<div>
+    Write about Yourself : <br> <textarea name="mytext" id="" cols="30" rows="10"></textarea>
+</div> <br>
+
+<label for="Mobile">Mobile Phone</label>
+<select name="mymobile" id="Mobile">
+    <option value="I-phone">I-Phone</option>
+    <option value="samsung" selected>samsung</option>
+    <option value="vivo">Vivo</option>
+    <option value="oppo">Oppo</option>
+</select>
+<br> <br>
+<div>
+    <input type="submit" value="Submit Now">
+    <input type="reset" value="Reset Now">
+</div>
+
+    </form>
+
+</body>
+</html>

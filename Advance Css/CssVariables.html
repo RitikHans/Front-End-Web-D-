@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-color: tomato;
+            --secondary-color: rgb(219, 42, 192);
+            --maxw: 733px;
+        }
+
+
+        .box {
+            --box-color: rgb(174, 0, 255);
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            box-shadow: 12px 12px var(--box-color);
+            margin: 12px 12px;
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        .container {
+            --box-color: yellow;
+            display: flex;
+            background-color: var(--box-color);
+            justify-content: center;
+            width: 433px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

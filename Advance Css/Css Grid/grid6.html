@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid With Media Querieso</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+'navbar navbar navbar navbar' 
+'section section section aside'
+'footer footer footer footer';
+
+        }
+       
+        .bdr {
+            background-color: wheat;
+            padding:10px 23px;
+            border: 2px solid black;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: yellow;
+            }
+            span{
+            display: block;
+        }
+            .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+'navbar navbar navbar navbar' 
+'section section section section'
+'aside aside aside aside'
+'footer footer footer footer';
+
+        }
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: red;
+            }
+            .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+'navbar navbar navbar navbar' 
+'section section section section'
+'aside aside aside aside'
+'footer footer footer footer';
+
+        }
+        aside{
+            display: none;
+        }
+
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: purple;
+            }
+            .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+'navbar navbar navbar navbar' 
+'section section section section'
+'aside aside aside aside'
+'footer footer footer footer';
+
+        }
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: orange;
+            }
+        }
+
+nav{
+grid-area: navbar;
+}
+section{
+grid-area: section;
+}
+aside{
+grid-area: aside;
+}
+footer{
+grid-area:footer;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+        <span>Home</span>
+        <span>Services</span>
+        <span>Contact-us</span>
+        <span>About us</span>
+        
+        </nav>
+
+        <section class="bdr">
+            <h2>Learning Css in hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id debitis minima eos fuga libero dolores provident, sit corporis ea optio, delectus aperiam? Blanditiis soluta reiciendis quia aliquam. Eaque amet qui obcaecati libero quae suscipit dicta, eum deleniti? Dolorem hic, error, adipisci consequatur possimus doloremque distinctio quia minus blanditiis expedita esse illo sit quam pariatur dolorum facere veritatis quae optio? Consequatur animi est et nihil ad possimus incidunt nostrum quidem? Eum magni illo quisquam quo iste. Quas praesentium facere consequatur dignissimos laboriosam? Modi nostrum error sint sunt doloremque at! Illo assumenda quaerat, voluptas veniam distinctio, eligendi quas debitis dolor labore fugiat nihil enim reiciendis possimus. Dolores placeat modi quod laborum alias aliquid perferendis quia, eaque dolorem fugit quasi neque, dolorum rerum. Quaerat possimus atque at placeat nobis id, unde libero ex eligendi minus! Animi illo tempora culpa, rerum voluptate iste dolore sapiente saepe rem commodi quos at exercitationem facere sunt! Facere a ratione qui earum dignissimos sed aperiam vel odit nostrum facilis fuga minima at numquam possimus, assumenda voluptates blanditiis nulla reprehenderit aliquam hic. Repellendus asperiores et corrupti illo facilis expedita! Reprehenderit, alias amet vel quisquam ut perspiciatis quibusdam magni ipsa eos fugiat aliquam saepe molestias beatae expedita blanditiis sapiente?</p>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+
+        <footer class="bdr">
+            Copyright &copy . ALl Rights Reserved.
+        </footer>
+    </div>
+</body>
+
+</html>
